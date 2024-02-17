@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+
+
+.Content {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+
+.videoComp {
+  margin: 0px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+#video {
+  width: 100%;
+  /* max-width: 660px; */
+  height: auto;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 5px rgb(195, 195, 195);
+}
+
+.subtitles { 
+  margin: 0px;
+  width: 100%;
+  height: 800px;
+  padding: 0px;
+  overflow: scroll;
+  max-width: 660px;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subtitlesComp {
+  width: 100%;
+  padding: 20px;
+
+}
+
+.subtitlesBox {
+  background-color:#f9f9f9;
+  box-shadow: 10px 5px 5px #b8b8b8;
+
+  border: 1px solid #444444aa;
+  border-radius: 3px;
+  /* min-height: 310px; */
+  margin: 8px;
+}
+
+.subtitlesText {
+  width: 95%;
+  height: 100px;
+  resize: none;
+  border-radius: 6px;
+  font-family: 'Droid Arabic Naskh', serif;
+  font-size: large;
+  margin: 10px 10px;
+  direction: rtl;
+}
+
+.subtitlesTime {
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  padding: 5px;
+  margin: 5px 10px;
+  width: 80px;
+  border-radius: 6px;
+}
+.timeArea {
+  text-align: left;
+}
+
+input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 6px;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 5px 10px;
+  background-color: #53a6ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+@media screen and (max-width: 900px) {
+  /* Change to a single column layout */
+  .column {
+    flex: 100%;
+    overflow: scroll;
+  }
+}
+

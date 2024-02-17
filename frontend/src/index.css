@@ -1,0 +1,35 @@
+body {
+  background-color: #ffffff;
+  margin: 0px;
+}
+
+button {
+  margin: 3px 15px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  min-width: 8em;
+  min-height: 2em;
+}
+button:hover {
+  background-color: rgb(189, 240, 255);
+}
+
+h1 {
+  padding: 20px;
+  margin: 0px;
+}
+
+.title {
+  margin: 0px 0px 10px 0px;
+  background-color: rgb(128, 225, 255);
+}
+
+#root {
+  text-align: center;
+
+  max-width: 100%;
+  margin: auto;
+  padding: 0px;
+
+  background-color: #ffffff;
+}
