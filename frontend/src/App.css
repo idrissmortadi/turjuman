@@ -42,8 +42,7 @@
 }
 
 .subtitlesBox {
-  background-color:#f9f9f9;
-  box-shadow: 10px 5px 5px #b8b8b8;
+  background-color: #ffffff;
 
   border: 1px solid #444444aa;
   border-radius: 3px;
@@ -55,9 +54,10 @@
   width: 95%;
   height: 100px;
   resize: none;
-  border-radius: 6px;
+  border-radius: 2px;
   font-family: 'Droid Arabic Naskh', serif;
   font-size: large;
+  outline: none;
   margin: 10px 10px;
   direction: rtl;
 }
@@ -65,11 +65,11 @@
 .subtitlesTime {
   text-align: center;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+  
   padding: 5px;
   margin: 5px 10px;
   width: 80px;
-  border-radius: 6px;
+  border: none;
 }
 .timeArea {
   text-align: left;

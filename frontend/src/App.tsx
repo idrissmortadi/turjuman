@@ -1,24 +1,23 @@
 import "./App.css";
-import VideoPlayer from "./components/VideoComponent";
 import SubtitlesComponent from "./components/SubtitlesComponent";
 import VideoUploader from "./components/VideoUploadComponent";
+import DoubleEndedSlider from "./components/timestampSliderComponent";
 import { useState, useRef } from "react";
 
 function App() {
-  const videoSource = "src/assets/ahmed_sied_0_30.mp4";
   const fileInputRef = useRef(null);
 
-  const subtitles = [];
+  const subtitles: Array<string> = [];
   const [timestamp, setTimestamp] = useState(0);
   const [stopTime, setStopTime] = useState(0);
 
-  const handleSetVideoTime = (newTimestamp) => {
+  const handleSetVideoTime = (newTimestamp: number) => {
     // Handle the video time as needed
     console.log(`Video time set to: ${newTimestamp}`);
     // Update the timestamp state
     setTimestamp(newTimestamp);
   };
-  const handleSetStopTime = (endTimestamp) => {
+  const handleSetStopTime = (endTimestamp: number) => {
     // Handle the video time as needed
     console.log(`Video end time set to: ${endTimestamp}`);
     // Update the timestamp state
@@ -31,7 +30,11 @@ function App() {
         <h1>ترجمان</h1>
       </div>
       <div className="Content">
-        <VideoUploader fileInputRef={fileInputRef} />
+        <div>
+          <VideoUploader fileInputRef={fileInputRef} />
+          <DoubleEndedSlider />
+        </div>
+       
         <SubtitlesComponent
           subtitlesList={subtitles}
           onSetVideoTime={handleSetVideoTime}

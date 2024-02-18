@@ -6,7 +6,8 @@ body {
 button {
   margin: 3px 15px;
   background-color: #ffffff;
-  border-radius: 6px;
+  border-radius: 2px;
+  border: 1px solid #000000;
   min-width: 8em;
   min-height: 2em;
 }
