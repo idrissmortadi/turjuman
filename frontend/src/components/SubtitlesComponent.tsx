@@ -11,7 +11,6 @@ const timestampToSeconds = (timestamp: string): number => {
 
 const SubtitlesComponent = ({
   subtitlesList,
-  onSetVideoTime,
   fileInputRef,
 }) => {
   const [subtitles, setSubtitles] = useState(subtitlesList);

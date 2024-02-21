@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState, useRef } from "react";
 
-const VideoUploader = ({ fileInputRef }) => {
+const VideoUploader = ({ fileInputRef}) => {
   const [videoUrl, setVideoUrl] = useState("");
 
   const handleUpload = (event) => {
